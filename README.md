@@ -28,5 +28,5 @@ docker logs -f dgb-node
 
 Auto Installation
 ```
-sudo bash -c "$(curl -L https://git.io/fh5Tj)" -- 0.18.5
+sudo bash -c "$(curl -L https://git.io/fhAyK)" -- 6.17.2
 ```
