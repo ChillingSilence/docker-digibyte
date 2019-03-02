@@ -2,11 +2,11 @@
 
 set -ex
 
-# Generate bitcoin.conf
+# Generate digibyte.conf
 echo "Installation Complete!"
 
 if [ $# -gt 0 ]; then
     args=("$@")
 fi
 
-exec bitcoind "${args[@]}"
+exec digibyted "${args[@]}"

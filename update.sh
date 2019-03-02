@@ -2,7 +2,7 @@
 set -e
 VERSION=$1
 
-if [ ! -z "$BCH_VERSION" ]; then
+if [ -z "$VERSION" ]; then
   echo "Missing version"
   exit;
 fi

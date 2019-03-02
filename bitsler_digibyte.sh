@@ -24,11 +24,11 @@ server=1
 listen=1
 rpcuser=$rpcuser
 rpcpassword=$rpcpassword
-rpcport=8432
+rpcport=14022
 rpcthreads=4
 dbcache=8000
+port=12024
 par=0
-port=8433
 rpcallowip=127.0.0.1
 rpcallowip=$(curl -s https://canihazip.com/s)
 printtoconsole=1
@@ -50,7 +50,7 @@ cat >/usr/bin/dgb-cli <<'EOL'
 docker exec -it dgb-node /bin/bash -c "digibyte-cli $*"
 EOL
 
-cat >/usr/bin/cgb-update <<'EOL'
+cat >/usr/bin/dgb-update <<'EOL'
 #!/usr/bin/env bash
 set -e
 if [[ $EUID -ne 0 ]]; then
