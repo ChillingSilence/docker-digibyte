@@ -18,15 +18,10 @@ docker run -v dgb-data:/digibyte --name=dgb-node -d \
       -p 12024:12024 \
       -p 14022:14022 \
       -v /home/$USER/.dgbdocker/digibyte.conf:/digibyte/.digibyte/digibyte.conf \
-      unibtc/docker-digibyte:6.17.2
+      unibtc/docker-digibyte:7.17.2
 ```
 
 Check Logs
 ```
 docker logs -f dgb-node
-```
-
-Auto Installation
-```
-sudo bash -c "$(curl -L https://git.io/fhAyK)" -- 6.17.2
 ```

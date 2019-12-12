@@ -4,7 +4,7 @@ ENV HOME /digibyte
 
 ENV USER_ID 1000
 ENV GROUP_ID 1000
-ENV DGB_VERSION=6.17.2
+ENV DGB_VERSION=7.17.2
 
 RUN groupadd -g ${GROUP_ID} digibyte \
   && useradd -u ${USER_ID} -g digibyte -s /bin/bash -m -d /digibyte digibyte
